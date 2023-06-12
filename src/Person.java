@@ -1,4 +1,4 @@
-public class Person {
+public class Person implements IPerson{
     private String firstName;
     private String lastName;
     private String emailAddress;
@@ -34,6 +34,9 @@ public class Person {
 
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
+    }
+
+    public Person() {
     }
 
     public Person(String firstName, String lastName, String emailAddress, String phoneNumber) {
